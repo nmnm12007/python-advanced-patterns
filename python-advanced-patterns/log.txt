@@ -1,0 +1,15 @@
+
+[2025-12-20 05:53:23] :: 
+ Adds two numbers and returns the sum::fun_add : args=(1, 2) : kwargs={} :: 
+[2025-12-20 05:53:23]  :: 
+ Time Taken for run ::  5.555152893066406e-05 
+ 
+[2025-12-20 06:22:46] :: 
+ generator to yield even numbers::even_number_generator : args=(10,) : kwargs={} :: 
+[2025-12-20 06:22:46]  :: 
+ Time Taken for run ::  0.00026798248291015625 
+ 
+[2025-12-20 06:23:21] :: 
+ generator to yield even numbers::even_number_generator : args=(10,) : kwargs={} :: 
+[2025-12-20 06:23:21]  :: 
+ Time Taken for run ::  0.0001506805419921875 
