@@ -1,4 +1,4 @@
-from decorators.log_and_time import log_and_time
+from decorators import log_and_time
 from generators.even_numbers import even_number_generator
 
 
