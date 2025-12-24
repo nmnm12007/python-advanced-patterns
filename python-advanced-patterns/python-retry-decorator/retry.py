@@ -6,6 +6,11 @@ LOG_DIR = Path("logs")
 LOG_DIR.mkdir(exist_ok = True)
 LOG_FILE = LOG_DIR / "execution.log"
 
+"""
+Decorator for retry with control based on idempotency, base_delay time along
+with the log of
+timestamp, result
+"""
 
 def log_success(func, result):
 	start_time = time.time()
