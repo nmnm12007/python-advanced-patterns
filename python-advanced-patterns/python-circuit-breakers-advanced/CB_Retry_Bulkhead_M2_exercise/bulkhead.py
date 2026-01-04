@@ -1,9 +1,9 @@
-
 import threading
-import logging
+
 
 class BulkheadFull(Exception):
     pass
+
 
 class SemaphoreBulkhead:
     def __init__(self, max_concurrent):

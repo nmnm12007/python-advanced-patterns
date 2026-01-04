@@ -1,13 +1,17 @@
-import threading, logging
+import threading
+import logging
 
 from contextlib import contextmanager
 
+
 class BulkheadFull(Exception):
-    """ Raised when bulkhead is full"""
+    """Raised when bulkhead is full"""
+
     pass
 
+
 class Bulkhead:
-    def __init__(self, max_concurrency:int):
+    def __init__(self, max_concurrency: int):
         self._semaphore = threading.Semaphore(max_concurrency)
 
     @contextmanager
@@ -20,5 +24,3 @@ class Bulkhead:
             yield
         finally:
             self._semaphore.release()
-
-            

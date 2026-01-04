@@ -6,12 +6,12 @@ app = Flask(__name__)
 
 @app.route("/call")
 def call():
-	result, status = safe_call()
-	return Response(result, status = status)
+    result, status = safe_call()
+    return Response(result, status=status)
 
 
 if __name__ == "__main__":
-	app.run(port = 5000)
+    app.run(port=5000)
 
 # from flask import Flask
 #

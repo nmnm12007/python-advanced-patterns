@@ -1,7 +1,7 @@
 from random import random
 
 from flask import Flask
-import logging, time
+import time
 
 app = Flask(__name__)
 

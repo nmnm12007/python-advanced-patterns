@@ -1,5 +1,4 @@
-import decorator_3_call_scenario, retry_decorator, retry_decorator_basedelay, \
-	retry_decorator_idempotency
+import retry_decorator_idempotency
 #
 #
 # @decorator_3_call_scenario.log_meta_date
@@ -39,24 +38,29 @@ import decorator_3_call_scenario, retry_decorator, retry_decorator_basedelay, \
 counter = 0
 
 
-@retry_decorator_idempotency.retry(retries = 4, retry_on = (ValueError,),
-                                   idempotent = True,
-                                   base_delay = 0.2)
+@retry_decorator_idempotency.retry(
+    retries=4, retry_on=(ValueError,), idempotent=True, base_delay=0.2
+)
 def flaky_idempotency():
-	global counter
-	counter += 1
-	if counter < 3:
-		raise ValueError("Temporary glitch")
-	return "OK"
+    global counter
+    counter += 1
+    if counter < 3:
+        raise ValueError("Temporary glitch")
+    return "OK"
 
-@retry_decorator_idempotency.retry(retries = 4, retry_on = (ValueError,),)
+
+@retry_decorator_idempotency.retry(
+    retries=4,
+    retry_on=(ValueError,),
+)
 def func_add(a, b):
-	""" Adds two numbers """
-	return a + b
+    """Adds two numbers"""
+    return a + b
+
+
 #
 # print(flaky_idempotency())
 
-if __name__ == '__main__':
-	
-	func_add(10, 20)
-	flaky_idempotency()
+if __name__ == "__main__":
+    func_add(10, 20)
+    flaky_idempotency()

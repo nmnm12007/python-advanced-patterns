@@ -1,7 +1,9 @@
 import concurrent.futures
 
+
 class TimeoutException(Exception):
     pass
+
 
 class Timeout:
     def __init__(self, time_out_duration: int):
@@ -9,11 +11,12 @@ class Timeout:
 
     def run_timeout(self, func, *args, **kwargs):
         with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-            future= executor.submit(func, *args, **kwargs)
+            future = executor.submit(func, *args, **kwargs)
             try:
                 return future.result(timeout=self.time_out_duration)
             except concurrent.futures.TimeoutError:
                 raise TimeoutException("[TIMEOUT] : API operation timed out")
+
 
 # The below signal module runs ONLY in LINUX/UNIX not on WIN
 #

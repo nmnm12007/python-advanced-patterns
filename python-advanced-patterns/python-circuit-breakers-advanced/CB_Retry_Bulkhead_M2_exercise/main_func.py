@@ -1,7 +1,8 @@
 import pybreaker
 import requests
 
-import logging, circuit_breaker
+import logging
+import circuit_breaker
 
 
 def safe_call_in_cb(url_str: str):

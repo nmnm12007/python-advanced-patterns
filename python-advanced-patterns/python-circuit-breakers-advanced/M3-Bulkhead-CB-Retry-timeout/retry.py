@@ -23,8 +23,6 @@ class Retry:
                     if attempt == self.max_attempts:
                         break
                     time.sleep(self.delays[min(attempt - 1, len(self.delays) - 1)])
-            raise RetryExhaustedException(
-                "[RETRY] Attempts exhausted"
-            ) from last_exc
+            raise RetryExhaustedException("[RETRY] Attempts exhausted") from last_exc
 
         return wrapper

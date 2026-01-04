@@ -1,8 +1,11 @@
-import logging, threading
+import logging
+import threading
 from contextlib import contextmanager
+
 
 class BulkheadException(Exception):
     pass
+
 
 class Bulkhead:
     def __init__(self, max_concurrency):
@@ -25,4 +28,3 @@ class Bulkhead:
         finally:
             self._bulkhead_semaphore.release()
             logging.info("[BULKHEAD] :: Bulkhead Semaphore released")
-

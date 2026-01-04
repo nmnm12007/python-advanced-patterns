@@ -1,0 +1,77 @@
+ Attempt: 0 of Retry:3 of fun_add  is successful : with  result ::  30  
+
+Attempt 0 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 1 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 2 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 3 of 5 of flaky  failed: with exception ::  Temporary issue
+ Attempt: 4 of Retry:5 of flaky  is successful : with  result ::  OK  
+
+ Attempt: 0 of Retry:3 of fun_add  is successful : with  result ::  30  
+
+[2025-12-23 07:02:19]:: fun_add::::Result:: 30
+Attempt 0 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 1 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 2 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 3 of 5 of flaky  failed: with exception ::  Temporary issue
+ Attempt: 4 of Retry:5 of flaky  is successful : with  result ::  OK  
+
+[2025-12-23 07:02:19]:: flaky::::Result:: OK
+ Attempt: 0 of Retry:5 of fun_add  is successful : with  result ::  30  
+
+[2025-12-23 07:10:37]:: fun_add::::Result:: 30
+Attempt 0 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 1 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 2 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 3 of 5 of flaky  failed: with exception ::  Temporary issue
+ Attempt: 4 of Retry:5 of flaky  is successful : with  result ::  OK  
+
+[2025-12-23 07:10:37]:: flaky::::Result:: OK
+ Attempt: 0 of Retry:5 of fun_add  is successful : with  result ::  30  
+
+[2025-12-23 07:14:13]:: fun_add::Adds two numbers::Result:: 30
+Attempt 0 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 1 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 2 of 5 of flaky  failed: with exception ::  Temporary issue
+Attempt 3 of 5 of flaky  failed: with exception ::  Temporary issue
+ Attempt: 4 of Retry:5 of flaky  is successful : with  result ::  OK  
+
+[2025-12-23 07:14:13]:: flaky::Raise ValueError TEST function::Result:: OK
+ Attempt: 1 of 4 of fun_add  is successful 
+ Attempt: 1 of 4 of fun_add  is successful 
+ Attempt: 1 of 4 of fun_add  is successful 
+Attempt 1 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.2
+Attempt 2 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.4
+Attempt 3 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.8
+Attempt 4 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  1.6
+ Attempt: 1 of 4 of fun_add  is successful 
+[2025-12-24 06:14:06]:: fun_add::Adds two numbers::Result:: 30
+Attempt 1 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.2
+Attempt 2 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.4
+Attempt 3 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.8
+Attempt 4 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  1.6
+ Attempt: 1 of 4 of fun_add  is successful 
+[2025-12-24 06:17:04]:: fun_add::Adds two numbers::Result:: 30
+ Attempt: 1 of 4 of sub  is successful 
+[2025-12-24 06:17:04]:: sub::Subtracts two numbers::Result:: -10
+Attempt 1 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.2
+Attempt 2 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.4
+Attempt 3 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.8
+Attempt 4 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  1.6
+ Attempt: 1 of 4 of fun_add  is successful 
+[2025-12-24 06:19:32]:: fun_add::Adds two numbers::Result:: 30
+ Attempt: 1 of 4 of sub  is successful 
+[2025-12-24 06:19:32]:: sub::Subtracts two numbers::Result:: -10
+Attempt 1 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.2
+Attempt 2 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.4
+Attempt 3 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.8
+ Attempt: 4 of 4 of flaky  is successful 
+[2025-12-24 06:19:32]:: flaky::Raise ValueError TEST function::Result:: OK
+ Attempt: 1 of 4 of fun_add  is successful 
+[2025-12-24 06:24:32]:: fun_add::Adds two numbers::Result:: 30
+ Attempt: 1 of 4 of sub  is successful 
+[2025-12-24 06:24:32]:: sub::Subtracts two numbers::Result:: -10
+Attempt 1 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.2
+Attempt 2 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.4
+Attempt 3 of 4 of flaky  failed: with exception ::  Temporary issuetime_delay ::  0.8
+ Attempt: 4 of 4 of flaky  is successful 
+[2025-12-24 06:24:32]:: flaky::Raise ValueError TEST function::Result:: OK
