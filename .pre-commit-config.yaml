@@ -12,3 +12,4 @@ repos:
       - id: mypy
         args:
           - --explicit-package-bases
+          - resilience_pattern_pipeline
