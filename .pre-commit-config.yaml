@@ -13,3 +13,4 @@ repos:
         args:
           - --explicit-package-bases
           - resilience_pattern_pipeline
+          - python-advanced-patterns
